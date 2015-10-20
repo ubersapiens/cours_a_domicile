@@ -15,4 +15,16 @@ Rails.application.routes.draw do
   get '/qui_sont_les_professeurs', to: 'welcome#qui_sont_les_professeurs'
   get '/recrutements', to: 'welcome#recrutements'
   get '/vos_avantages', to: 'welcome#vos_avantages'
+
+  ## COURS
+  match '/cours-de-rock' => 'activity_groups#show', :defaults => { :id => '5' }, via: [:get]
+  match '/cours-de-danse-latino' => 'activity_groups#show', :defaults => { :id => '5' }, via: [:get]
+  match '/cours-de-valse-et-salon' => 'activity_groups#show', :defaults => { :id => '5' }, via: [:get]
+  match '/cours-de-tango-argentin' => 'activity_groups#show', :defaults => { :id => '5' }, via: [:get]
+  match '/cours-de-danses-urbaines' => 'activity_groups#show', :defaults => { :id => '5' }, via: [:get]
+  match '/cours-de-world-danse' => 'activity_groups#show', :defaults => { :id => '5' }, via: [:get]
+  match '/cours-de-line-danse' => 'activity_groups#show', :defaults => { :id => '5' }, via: [:get]
+  match '/cours-de-danse-traditionelle' => 'activity_groups#show', :defaults => { :id => '5' }, via: [:get]
+  match '/cours-de-danse-classique' => 'activity_groups#show', :defaults => { :id => '5' }, via: [:get]
+
 end

@@ -1,6 +1,19 @@
-<h1>Editing Activity Group</h1>
+<div class="container-fluid" id="activity-group-header-container">
+  <div class="row">
+    <div class="col-lg-12 text-center" id="header-title">
+      <h1>Modifié une Famille de Activités</h1>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" id="activity-group-main-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center" id="header-title">
+        <%= render 'form' %>
 
-<%= render 'form' %>
-
-<%= link_to 'Show', @activity_group %> |
-<%= link_to 'Back', activity_groups_path %>
+        <%= link_to 'Show', @activity_group %> |
+        <%= link_to 'Back', activity_groups_path %>
+      </div>
+    </div>
+  </div>
+</div>
