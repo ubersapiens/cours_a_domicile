@@ -17,7 +17,7 @@
           <div class="row">
             <% @activity_group.activities.each do |a| %>
               <div class="col-lg-2" style="border:1px solid black;margin:1em;padding:1em;height:150px;width:150px;">
-                <%= a.name %>
+                <%= a.name %><br>
                 <%= link_to 'Voir', a %>
               </div>
             <% end %>
