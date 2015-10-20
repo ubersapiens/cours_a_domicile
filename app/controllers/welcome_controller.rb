@@ -1,8 +1,8 @@
 class WelcomeController < ApplicationController
   def index
-    @students = Student.all
     @student = Student.new
     @gift = Gift.new
+    @newsletter = Newsletter.new
   end
   def comment_ca_marche
     
