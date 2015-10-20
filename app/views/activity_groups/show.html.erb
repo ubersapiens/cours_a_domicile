@@ -16,11 +16,10 @@
         <div class="col-lg-7">
           <div class="row">
             <% @activity_group.activities.each do |a| %>
-              <% link_to a do %>
               <div class="col-lg-2" style="border:1px solid black;margin:1em;padding:1em;height:150px;width:150px;">
                 <%= a.name %>
+                <%= link_to 'Voir', a %>
               </div>
-              <% end %>
             <% end %>
           </div>
         </div>
