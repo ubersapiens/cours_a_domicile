@@ -17,14 +17,14 @@ Rails.application.routes.draw do
   get '/vos_avantages', to: 'welcome#vos_avantages'
 
   ## COURS
-  match '/cours-de-rock' => 'activity_groups#show', :defaults => { :id => '5' }, via: [:get]
-  match '/cours-de-danse-latino' => 'activity_groups#show', :defaults => { :id => '5' }, via: [:get]
-  match '/cours-de-valse-et-salon' => 'activity_groups#show', :defaults => { :id => '5' }, via: [:get]
-  match '/cours-de-tango-argentin' => 'activity_groups#show', :defaults => { :id => '5' }, via: [:get]
+  match '/cours-de-rock' => 'activity_groups#show', :defaults => { :id => '1' }, via: [:get]
+  match '/cours-de-danse-latino' => 'activity_groups#show', :defaults => { :id => '2' }, via: [:get]
+  match '/cours-de-valse-et-salon' => 'activity_groups#show', :defaults => { :id => '3' }, via: [:get]
+  match '/cours-de-tango-argentin' => 'activity_groups#show', :defaults => { :id => '4' }, via: [:get]
   match '/cours-de-danses-urbaines' => 'activity_groups#show', :defaults => { :id => '5' }, via: [:get]
-  match '/cours-de-world-danse' => 'activity_groups#show', :defaults => { :id => '5' }, via: [:get]
-  match '/cours-de-line-danse' => 'activity_groups#show', :defaults => { :id => '5' }, via: [:get]
-  match '/cours-de-danse-traditionelle' => 'activity_groups#show', :defaults => { :id => '5' }, via: [:get]
-  match '/cours-de-danse-classique' => 'activity_groups#show', :defaults => { :id => '5' }, via: [:get]
+  match '/cours-de-world-danse' => 'activity_groups#show', :defaults => { :id => '6' }, via: [:get]
+  match '/cours-de-line-danse' => 'activity_groups#show', :defaults => { :id => '7' }, via: [:get]
+  match '/cours-de-danse-traditionelle' => 'activity_groups#show', :defaults => { :id => '8' }, via: [:get]
+  match '/cours-de-danse-classique' => 'activity_groups#show', :defaults => { :id => '9' }, via: [:get]
 
 end
