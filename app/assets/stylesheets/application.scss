@@ -27,7 +27,7 @@
   font-family: 'Raleway';
   
   .navbar-right {
-    margin-top:1em;
+    margin-top:1.5em;
     margin-right:2em;
   }
 
@@ -84,6 +84,9 @@
 .opaque {
   background-color:black !important;
   opacity: 0.8 !important;
+  #nav-logo {
+    height:90px !important;
+  }
 }
 
 // FOOTER

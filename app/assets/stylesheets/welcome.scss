@@ -135,6 +135,7 @@ html {
   p{
     font-size:1.2em;
     line-height:1.1em;
+    font-family: 'Raleway';
   }
 
   h1 {
@@ -169,23 +170,6 @@ html {
   h1 {
     padding: 1em;
     font-family: 'Raleway';
-  }
-
-  #student_email {
-    width:60%;
-    padding:1em;
-    float:left;
-    font-size:1.2em;
-  }
-
-  input[type="submit"] {
-    width:20%;
-    background-color:#f20661;
-    color:white;
-    font-size:1.2em;
-    padding:1em;
-    margin-top:-0.6em;
-    margin-left:1em;
   }
 }
 

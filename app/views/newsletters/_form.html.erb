@@ -10,12 +10,17 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+  
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="field">
+        <%= f.text_field :email, :placeholder => 'Inscrivez vous a notre newsletter' %>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="actions">
+        <%= f.submit 'Envoyer' %>
+      </div>
+    </div>
   </div>
 <% end %>

@@ -1,3 +1,27 @@
 // Place all the styles related to the Newsletters controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#new_newsletter {
+  #newsletter_email {
+    width:100%;
+    padding:1em;
+    float:left;
+    font-size:1.5em;
+    border: #f20661;
+    font-family: 'Raleway';
+    font-weight:500;
+    color:#3d3d3d;
+  }
+
+  input[type="submit"] {
+    width:100%;
+    background-color:#f20661;
+    color:white;
+    font-size:1.5em;
+    padding:1em;
+    border: #f20661;
+    font-family: 'Raleway';
+    font-weight:500;
+  }
+}
