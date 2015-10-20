@@ -1,0 +1,66 @@
+// Place all the styles related to the Teachers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//INDEX TEACHER
+
+#teachers-list-container {
+  padding-top:70px;
+
+  table td {
+    padding-right: 1em;
+  }
+}
+
+//SHOW TEACHER
+
+#teacher-profile-container {
+  padding-top:70px;
+
+  img {
+    max-height: 300px;
+  }
+}
+
+//NEW TEACHER
+
+#teacher-header-container {
+  background: black;
+  color:#f20661;
+  font-family: 'Raleway';
+  font-weight: 500;
+  h1 {
+    font-size:3em;
+    font-weight:900;
+  }
+  padding-bottom:50px;
+  padding-top:100px;
+}
+
+#new-teacher-container {
+  background:#aba8a9;
+  color:white;
+  font-family: 'Raleway';
+  font-weight: 500;
+
+  p {
+    font-size:1.2em;
+    margin:1em 0;
+  }
+  
+  h2 {
+    font-size:2em;
+    padding: 0.7em 0;
+  }
+
+  input, textarea {
+    width:100%;
+    padding:1em;
+  }
+
+  input[type=submit] {
+    background:#f20661;
+    font-size:1.2em;
+
+  }
+}

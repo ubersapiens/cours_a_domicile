@@ -1,0 +1,18 @@
+Rails.application.routes.draw do
+  resources :newsletters
+  root 'welcome#index'
+  resources :gifts
+  resources :activity_groups
+  resources :activities
+  resources :students
+  resources :teachers
+
+  ## STATIC PAGES
+  get '/comment_ca_marche', to: 'welcome#comment_ca_marche'
+  get '/faq', to: 'welcome#faq'
+  get '/galerie_des_profs', to: 'welcome#galerie_des_profs'
+  get '/qui_sommes_nous', to: 'welcome#qui_sommes_nous'
+  get '/qui_sont_les_professeurs', to: 'welcome#qui_sont_les_professeurs'
+  get '/recrutements', to: 'welcome#recrutements'
+  get '/vos_avantages', to: 'welcome#vos_avantages'
+end

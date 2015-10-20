@@ -1,0 +1,99 @@
+<%= form_for(@gift) do |f| %>
+  <% if @gift.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gift.errors.count, "error") %> prohibited this gift from being saved:</h2>
+
+      <ul>
+      <% @gift.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="row">
+    <div class="col-lg-12">
+      <p>De la part de (vous):</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="field">
+        <%= f.text_field :sender_civil_status, placeholder: 'Civilité' %>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="field">
+        <%= f.text_field :sender_first_name, placeholder: 'Prenom' %>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="field">
+        <%= f.text_field :sender_last_name, placeholder: 'Nom' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="field">
+        <%= f.text_field :sender_email, placeholder: 'Email' %>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="field">
+        <%= f.text_field :sender_phone_number, placeholder: 'Numero de telephone' %>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-lg-12">
+      <p>L’heureux bénéficiaire:</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="field">
+        <%= f.text_field :receiver_first_name, placeholder: 'Prenom' %>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="field">
+        <%= f.text_field :receiver_last_name, placeholder: 'Nom' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="field">
+        <%= f.text_field :gift_activity, placeholder: 'Cours souhaité' %>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="field">
+        <%= f.text_field :gift_amount, placeholder: 'Montant' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.text_area :message_for_receiver, placeholder: 'Message personnalisé à l’attention du bénéficiaire', cols: '30', rows: '10' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.text_area :message_for_admin, placeholder: 'Message personnalisé à notre attention', cols: '30', rows: '10' %>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-lg-12">
+      <div class="actions">
+        <%= f.submit 'J\'offre un cadeau', :id => 'gift-form-call-to-action'%>
+      </div>
+    </div>
+  </div>
+  
+<% end %>

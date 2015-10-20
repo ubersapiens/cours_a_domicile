@@ -1,0 +1,21 @@
+// Place all the styles related to the Gifts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#gift-form-call-to-action {
+  background-color:white;
+  padding:1em 2em;
+  border-radius: 5px;
+  color:#f20661;
+  font-size:2em;
+  text-decoration:none;
+  a {
+    color:white;
+    &:visited {
+      color:white;
+    }
+    &:hover {
+      color:white;
+    }
+  }
+}

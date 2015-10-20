@@ -1,0 +1,44 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#courses-header-container {
+  background: black;
+  color:#f20661;
+  font-family: 'Raleway';
+  font-weight: 500;
+  h1 {
+    font-size:3em;
+    font-weight:900;
+  }
+  padding-bottom:50px;
+  padding-top:100px;
+}
+
+#courses-family-container {
+  background:#f20661;
+  color:white;
+  padding:3em;
+
+  .row {
+    padding: 1em 0;
+  }
+
+  p {
+    font-family: 'Raleway';
+    font-weight: 500;
+    padding-top: 1em;
+    font-size:1.4em;
+    line-height:1.2em;
+  }
+}
+
+#courses-form-container {
+  background: #f20661;
+  color:white;
+  font-family: 'Raleway';
+  font-weight: 500;
+  
+  padding-bottom:50px;
+  padding-top:70px;
+}

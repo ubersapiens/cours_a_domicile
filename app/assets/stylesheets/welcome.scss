@@ -1,0 +1,414 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+  -webkit-font-smoothing: antialiased !important;
+  font-family: 'Raleway', sans-serif !important;
+}
+
+#header-container {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), image-url('background_fitness.jpg');
+  padding-bottom:2em;
+  background-position-y: 60%;
+  background-size:cover;
+  padding-top:100px;
+
+  #header-title {
+    font-family:'Raleway';
+    color:white;
+    h1 {
+      font-weight:500;
+      font-size:3em;
+    }
+  }
+
+  .fa-3x {
+    color:#f20661;
+  }
+
+  #header-descriptors {
+    font-family:'Raleway';
+    color:white;
+    margin: 1em 0;
+
+    h2 {
+      font-weight:500;
+      font-size:2em;
+    }
+  }
+
+  #header-call-to-action {
+    background-color:#f20661;
+    padding:1em 2em;
+    border-radius: 5px;
+    color:white;
+    font-size:2em;
+    margin-top:1em;
+    text-decoration:none;
+    a {
+      color:white;
+      &:visited {
+        color:white;
+      }
+      &:hover {
+        color:white;
+      }
+    }
+  }
+}
+
+.carousel-caption {
+  font-family: 'Raleway';
+  font-weight:400;
+  font-size: 1em;
+  h2 {
+    font-size:1.2em;
+  }
+}
+
+#cours-container {
+  padding-bottom:8em;
+  padding-top:2em;
+  background:#f20661;
+  color:white;
+  h1 {
+    padding: 1em;
+    font-family: 'Raleway';
+  }
+
+  #coursCarousel {
+    .carousel-control {
+      top:50%;
+      width:auto;
+      height:1em;
+      background:transparent;
+    }
+    .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right  {
+      position:static;
+      display:block;
+      width:auto;
+    }
+  }
+  .img-responsive {
+    opacity:0.7;
+  }
+}
+
+#events-container {
+  padding-bottom:8em;
+  padding-top:2em;
+  background: black;
+  color: white;
+  h1 {
+    padding: 1em;
+    font-family: 'Raleway';
+  }
+  #eventsCarousel {
+    .carousel-control {
+      top:50%;
+      width:auto;
+      height:1em;
+      background:transparent;
+    }
+    .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right  {
+      position:static;
+      display:block;
+      width:auto;
+    }
+  }
+  .img-responsive {
+    opacity:0.7;
+  }
+}
+
+#gift-container {
+  padding-bottom:2em;
+  background: #f20661;
+  color:white;
+  font-family: 'Raleway';
+  font-size: 1.2em;
+
+  p{
+    font-size:1.2em;
+    line-height:1.1em;
+  }
+
+  h1 {
+    padding: 1em;
+    font-family: 'Raleway';
+  }
+
+  input {
+    width:100%;
+    padding: 1em;
+  }
+
+  textarea {
+    width:100%;
+    padding: 1em;
+  }
+
+  input[type="submit"] {
+    width:40%;
+    background-color:white;
+    color:#f20661;
+    font-size:1.2em;
+    padding:1em 3em;
+    margin-top:1em;
+  }
+}
+
+#social-container {
+  padding-bottom:5em;
+  background: black;
+  color: white;
+  h1 {
+    padding: 1em;
+    font-family: 'Raleway';
+  }
+
+  #student_email {
+    width:60%;
+    padding:1em;
+    float:left;
+    font-size:1.2em;
+  }
+
+  input[type="submit"] {
+    width:20%;
+    background-color:#f20661;
+    color:white;
+    font-size:1.2em;
+    padding:1em;
+    margin-top:-0.6em;
+    margin-left:1em;
+  }
+}
+
+#partners-container {
+  padding-bottom:5em;
+  background: #f20661;
+  color: white;
+  h1 {
+    padding: 1em;
+    font-family: 'Raleway';
+  }
+
+  .col-lg-4 {
+    text-align:center;
+    width:25%;
+  }
+}
+
+// STATIC PAGES
+#static-header-container {
+  background: black;
+  color:#f20661;
+  padding-bottom:2em;
+  padding-top:100px;
+
+  #header-title {
+    font-family:'Raleway';
+    h1 {
+      font-weight:500;
+      font-size:3em;
+    }
+  }
+}
+
+
+#static-main-container {
+  background: #f20661;
+  color:#fff;
+
+
+  //VOS AVANTAGES
+  #vos-avantages-container {
+    padding:3em;
+    font-family:'Raleway' !important;
+    font-weight:300;
+    h3 {
+      font-size:2.1em;
+      font-family:'Raleway' !important;
+      font-weight:900;
+    }
+    p {
+      font-size: 1.8em;
+      font-weight:200;
+      line-height:1.2em;
+      font-family:'Raleway' !important;
+      font-weight:300;
+    }
+    a {
+      color:#fff;
+      font-weight:900;
+    }
+  }
+  #header-title {
+    font-family:'Raleway';
+    h2 {
+      font-weight:900;
+      font-size:2.5em;
+      font-family:'Raleway' !important;
+    }
+  }
+
+
+  //LES PROFS
+  #les-profs-container {
+    margin:10em;
+    p {
+      font-size: 1.8em;
+      font-weight:200;
+      line-height:1.2em;
+      font-family:'Raleway' !important;
+      font-weight:300;
+    }
+  }
+
+  //QUI SOMMES NOUS
+  #qui-sommes-nous-container {
+    margin:5em;
+    p {
+      margin-top:1.5em;
+      font-size: 1.8em;
+      font-weight:200;
+      line-height:1.2em;
+      font-family:'Raleway' !important;
+      font-weight:300;
+    }
+    a {
+      color:#fff;
+      font-weight:900;
+      background:transparent;
+    }
+  }
+
+  //GALERIE DES PROFS
+  #galerie-des-profs-container {
+    margin:5em;
+    p {
+      margin-top:1.5em;
+      font-size: 1.8em;
+      font-weight:200;
+      line-height:1.2em;
+      font-family:'Raleway' !important;
+      font-weight:300;
+    }
+    a {
+      color:#fff;
+      font-weight:900;
+      background:transparent;
+    }
+  }
+  //FAQ
+  #faq-container {
+    margin:5em;
+    li, p {
+      margin-top:1.5em;
+      font-size: 1.8em;
+      font-weight:200;
+      line-height:1.2em;
+      font-family:'Raleway' !important;
+      font-weight:300;
+    }
+
+    li {
+      font-weight:900;
+    }
+    a {
+      color:#fff;
+      font-weight:900;
+      background:transparent;
+      font-size: 2em;
+      font-weight:900;
+      line-height:1.2em;
+      font-family:'Raleway' !important;
+    }
+  }
+
+  //COMMENT CA MARCHE
+  #comment-ca-marche-container {
+    padding:3em;
+    font-family:'Raleway' !important;
+    font-weight:300;
+    p {
+      font-size: 1.8em;
+      font-weight:200;
+      line-height:1.2em;
+      font-family:'Raleway' !important;
+      font-weight:300;
+    }
+    a {
+      color:#fff;
+      font-weight:900;
+    }
+  }
+}
+
+//RECRUTEMENTS
+#recrutements-main-container {
+  padding-bottom:2em;
+  background: #f20661;
+  color:white;
+  font-family: 'Raleway';
+  font-size: 1.2em;
+
+  p {
+    font-size:1.8em;
+    line-height:1.1em;
+    font-weight:300;
+    font-family: 'Raleway';
+  }
+
+  h1 {
+    padding: 1em;
+    font-family: 'Raleway';
+  }
+
+  input {
+    width:100%;
+    padding: 1em;
+  }
+
+  textarea {
+    width:100%;
+    padding: 1em;
+  }
+
+  input[type="date"] {
+    width:55%;
+    background-color:white;
+    color:#3d3d3d;
+  }
+
+  label {
+    font-family:'Raleway';
+    font-weight:500;
+    font-size:1.3em;
+  }
+
+  select {
+    color: #3d3d3d;
+    width:30%;
+    font-size:1.2em;
+  }
+
+  input[type="submit"] {
+    width:40%;
+    background-color:white;
+    color:#f20661;
+    font-size:1.2em;
+    padding:1em 3em;
+    margin-top:1em;
+  }
+
+  #header-title {
+    margin:2em 0;
+  }
+}
+

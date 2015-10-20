@@ -1,0 +1,31 @@
+<div class="container-fluid" id="activity-group-header-container">
+  <div class="row">
+    <div class="col-lg-12 text-center" id="header-title">
+      <h1><%= @activity_group.name %></h1>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" id="activity-group-main-container">
+  <div class="row">
+    <div class="col-lg-12 text-center" id="header-title">
+      <p id="notice"><%= notice %></p>
+      <div class="row">
+        <div class="col-lg-5">
+          <%= @activity_group.description %>
+        </div>
+        <div class="col-lg-7">
+          <div class="row">
+            <% @activity_group.activities.each do |a| %>
+              <div class="col-lg-2" style="border:1px solid black;">
+                <%= a.activity_group_id %>
+                <%= a.name %>
+                <%= image_tag a.image_url(:thumb) %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <%= link_to 'Back', root_path %>
+    </div>
+  </div>
+</div>

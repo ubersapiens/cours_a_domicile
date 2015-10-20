@@ -1,0 +1,76 @@
+// Place all the styles related to the Students controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+form.new_student {
+  input, textarea {
+    width:100%;
+    padding:1em;
+  }
+
+  input[type=checkbox] {
+    text-align:left;
+  }
+}
+
+#new-student-main-container {
+  padding-bottom:2em;
+  background: #f20661;
+  color:white;
+  font-family: 'Raleway';
+  font-size: 1.2em;
+
+  p {
+    font-size:1.8em;
+    line-height:1.1em;
+    font-weight:300;
+    font-family: 'Raleway';
+  }
+
+  h1 {
+    padding: 1em;
+    font-family: 'Raleway';
+  }
+
+  input {
+    width:100%;
+    padding: 1em;
+  }
+
+  textarea {
+    width:100%;
+    padding: 1em;
+  }
+
+  input[type="date"] {
+    width:55%;
+    background-color:white;
+    color:#3d3d3d;
+  }
+
+  label {
+    font-family:'Raleway';
+    font-weight:500;
+    font-size:1.3em;
+  }
+
+  select {
+    color: #3d3d3d;
+    width:30%;
+    font-size:1.2em;
+  }
+
+  input[type="submit"] {
+    width:40%;
+    background-color:white;
+    color:#f20661;
+    font-size:1.2em;
+    padding:1em 3em;
+    margin-top:1em;
+  }
+
+  #header-title {
+    margin:2em 0;
+  }
+
+}

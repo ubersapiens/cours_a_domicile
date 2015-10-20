@@ -1,0 +1,223 @@
+<div class="container">
+<%= form_for(@teacher) do |f| %>
+  <% if @teacher.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@teacher.errors.count, "error") %> prohibited this teacher from being saved:</h2>
+
+      <ul>
+      <% @teacher.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="field">
+        <%= f.text_field :civil_status, placeholder: 'Civilité' %>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="field">
+        <%= f.text_field :first_name, placeholder: 'Prenom' %>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="field">
+        <%= f.text_field :last_name, placeholder: 'Nom' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="field">
+        <%= f.text_field :email, placeholder: 'Email' %>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="field">
+        <%= f.text_field :phone_number, placeholder: 'Numero de telephone' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="field">
+        <%= f.label :date_of_birth, 'Date de naissance', :style => 'margin-right:2em;' %>
+        <%= f.date_field :date_of_birth %>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="field">
+        <%= f.text_field :nationality, placeholder: 'Nationalité' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="field">
+        <%= f.text_field :address, placeholder: 'Votre adresse' %>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="field">
+        <%= f.text_field :address_compliment, placeholder: 'Complément adresse' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="field">
+        <%= f.text_field :country, placeholder: 'Pays' %>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="field">
+        <%= f.text_field :postal_code, placeholder: 'Code postal' %>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.label :diploma, 'Vous avez un diplôme spécifique ou une certification', :style => 'margin-right:2em;' %>
+        <%= f.text_field :diploma, :style => 'width:100%;' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.label :activity_group_1, 'Discipline enseignée 1', :style => 'margin-right:2em;' %>
+        <%= f.text_field :activity_group_1, :style => 'width:70%;' %>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.label :activity_group_2, 'Discipline enseignée 2', :style => 'margin-right:2em;' %>
+        <%= f.text_field :activity_group_2, :style => 'width:70%;' %>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.label :activity_group_3, 'Discipline enseignée 3', :style => 'margin-right:2em;' %>
+        <%= f.text_field :activity_group_3, :style => 'width:70%;' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="field">
+        <%= f.text_field :activity_1, placeholder: 'Specialité enseignée 1' %>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="field">
+        <%= f.text_field :activity_1_level, placeholder: 'Niveau maxi' %>
+      </div>
+    </div>
+    <div class="col-lg-8">
+      <div class="field">
+        <%= f.text_field :activity_2, placeholder: 'Specialité enseignée 2' %>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="field">
+        <%= f.text_field :activity_2_level, placeholder: 'Niveau maxi' %>
+      </div>
+    </div>
+    <div class="col-lg-8">
+      <div class="field">
+        <%= f.text_field :activity_3, placeholder: 'Specialité enseignée 3' %>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="field">
+        <%= f.text_field :activity_3_level, placeholder: 'Niveau maxi' %>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.label :start_date, 'Vous etes disponible a partir de quelle date', :style => 'margin-right:2em;' %>
+        <%= f.date_field :start_date %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.label :availability, 'Quelles sont vos heures de disponibilités', :style => 'margin-right:2em;' %>
+        <%= f.text_field :availability, :style => 'width:60%;' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.label :teaching_area_1, 'Zone d\'intervention', :style => 'margin-right:1em;' %>
+        <%= f.text_field :teaching_area_1, :style => 'width:40%;' %>
+        <%= f.label :teaching_area_1_perimeter, 'dans un rayon de', :style => 'margin:0 1em;' %>
+        <%= f.text_field :teaching_area_1_perimeter, :style => 'width:10%;' %>
+        <%= f.label :teaching_area_1_perimeter, 'km' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.label :teaching_area_2, 'Zone d\'intervention', :style => 'margin-right:1em;' %>
+        <%= f.text_field :teaching_area_2, :style => 'width:40%;' %>
+        <%= f.label :teaching_area_2_perimeter, 'dans un rayon de', :style => 'margin:0 1em;' %>
+        <%= f.text_field :teaching_area_2_perimeter, :style => 'width:10%;' %>
+        <%= f.label :teaching_area_2_perimeter, 'km' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.label :teaching_area_3, 'Zone d\'intervention', :style => 'margin-right:1em;' %>
+        <%= f.text_field :teaching_area_3, :style => 'width:40%;' %>
+        <%= f.label :teaching_area_3_perimeter, 'dans un rayon de', :style => 'margin:0 1em;' %>
+        <%= f.text_field :teaching_area_3_perimeter, :style => 'width:10%;' %>
+        <%= f.label :teaching_area_3_perimeter, 'km' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.label :has_a_vehicle, 'Vous avez un vehicule ?', :style => 'margin-right:2em;' %>
+        <%= f.select :has_a_vehicle, [['Oui, j\'ai un vehicule', true], ['Non, je n\'ai pas un vehicule', false]], :style => 'width:60%;' %>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <p>Telecharger une photo</p>
+        <%= f.file_field :avatar %>
+      </div>
+    </div>
+  </div>  
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.text_area :description, placeholder: 'Mots du professeur', cols: '30', rows: '10' %>
+      </div>
+    </div>
+  </div> 
+  <div class="row text-center">
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.submit 'J\'envoi ma candidature', :class => 'btn-success'  %>
+      </div>
+    </div>
+  </div>   
+<% end %>
+</div>
