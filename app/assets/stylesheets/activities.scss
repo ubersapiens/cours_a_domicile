@@ -1,3 +1,45 @@
 // Place all the styles related to the Activities controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#activity-header-container {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), image-url('background_fitness.jpg');
+  padding-bottom:2em;
+  background-position-y: 60%;
+  background-size:cover;
+  padding-top:100px;
+
+  #header-title {
+    font-family:'Raleway';
+    color:white;
+    h1 {
+      font-weight:500;
+      font-size:3em;
+    }
+  }
+}
+
+#activity-main-container {
+  padding:4em;
+  background: #f20661;
+  color:white;
+  font-family: 'Raleway';
+  font-size: 1.5em;
+}
+
+#new_activity {
+  input {
+    width: 100%;
+    padding:1em;
+    color: #3d3d3d;
+  }
+
+  input[type="submit"] {
+    background-color:white;
+    color:#f20661;
+    padding:1em 3em;
+    margin-top:1em;
+  }
+}

@@ -2,8 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// SHOW
-
 #activity-group-header-container {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.4),
@@ -29,5 +27,20 @@
   background: #f20661;
   color:white;
   font-family: 'Raleway';
-  font-size: 1.2em;
+  font-size: 1.5em;
+}
+
+#new_activity_group {
+  #activity_group_name, #activity_group_description {
+    width: 100%;
+    padding:1em;
+    color: #3d3d3d;
+  }
+
+  input[type="submit"] {
+    background-color:white;
+    color:#f20661;
+    padding:1em 3em;
+    margin-top:1em;
+  }
 }

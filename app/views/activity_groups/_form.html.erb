@@ -10,8 +10,25 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="actions">
-    <%= f.submit %>
+  <div class="row text-center">
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.text_field :name, placeholder: 'Nom de Famille de Activités (ex. Salsa & danses latinos)' %>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.text_field :description, placeholder: 'Description de cette Famille de Activités (ex. Le rock n roll viens des Etats Unis. Elvis Presley est la star.)' %>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-lg-12">
+      <div class="actions">
+        <%= f.submit 'Créer' %>
+      </div>
+    </div>
   </div>
 <% end %>

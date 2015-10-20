@@ -10,8 +10,61 @@
       </ul>
     </div>
   <% end %>
-  <%= f.file_field :image %>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="field">
+        <%= f.text_field :name, placeholder: 'Nom de l\'Activité (ex. Salsa)' %>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="field">
+        <%= f.text_field :activity_group_id, placeholder: '# de Famille d\'Activités' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.text_field :title, placeholder: 'Titre de l\'Activité (ex. La delice de la salsa.)' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.text_field :description, placeholder: 'Description de cette Activité (ex. Le rock n roll viens des Etats Unis. Elvis Presley est la star.)' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="field">
+        <%= f.text_field :price_one_person, placeholder: '€ Prix une personne' %>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="field">
+        <%= f.text_field :price_two_persons, placeholder: '€ Prix couple' %>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="field">
+        <%= f.text_field :price_group, placeholder: '€ Prix groupe' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.text_field :you_tube_video, placeholder: 'Lien de video YouTube' %>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-lg-12">
+      <div class="actions">
+        <%= f.submit 'Créer' %>
+      </div>
+    </div>
   </div>
 <% end %>
