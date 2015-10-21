@@ -16,6 +16,26 @@
         <div class="col-lg-7">
           <iframe width="420" height="315" src="<%= @activity.you_tube_video %>">
           </iframe>
+          <table style="width:100%">
+            <tr>
+              <th colspan="3">Tarif</th>
+            </tr>
+            <tr>
+              <td>1 personne</td>
+              <td>à partir de</td>
+              <td><%= @activity.price_one_person %> €/h*</td>
+            </tr>
+            <tr>
+              <td>Couple</td>
+              <td>à partir de</td>
+              <td><%= @activity.price_two_persons %> €/h*</td>
+            </tr>
+            <tr>
+              <td>Groupe</td>
+              <td>à partir de</td>
+              <td><%= @activity.price_group %> €/h*</td>
+            </tr>
+          </table>
         </div>
       </div>
       <%= link_to 'Back', root_path %>
