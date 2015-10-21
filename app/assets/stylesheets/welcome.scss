@@ -7,6 +7,43 @@ html {
   font-family: 'Raleway', sans-serif !important;
 }
 
+.sticky{
+  position: fixed;
+  top: 40%;
+  right: 0px;
+  width: 115px;
+  height: 0px;
+  text-align:right;
+  z-index:9999;
+  margin-top:-15px;
+}
+
+.sticky a{
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg); 
+  -moz-transform: rotate(-90deg); 
+  -o-transform: rotate(-90deg); 
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  display: inline-table; 
+  background: #f20661; 
+  text-align:center;
+  height: 15px; 
+  width: 165px;
+  padding: 8px 16px;
+  color: #fff; 
+  font-family: 'Raleway'; 
+  font-size: 17px; 
+  font-weight: 500; 
+  text-decoration: none; 
+  border: 2px solid #fff;
+}
+
+.sticky a:hover { 
+  background: #fff; 
+  color:#f20661;
+  text-decoration:none;
+}
+
 #header-container {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.4),
