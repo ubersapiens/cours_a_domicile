@@ -32,4 +32,9 @@ Rails.application.routes.draw do
   match '/cours-de-yoga-grossesse' => 'activities#show', :defaults => { :id => '50' }, via: [:get]
   match '/cours-de-pilates' => 'activities#show', :defaults => { :id => '51' }, via: [:get]
   match '/cours-de-gym-douce' => 'activities#show', :defaults => { :id => '52' }, via: [:get]
+  match '/cours-de-feldenkrais' => 'activities#show', :defaults => { :id => '53' }, via: [:get]
+  match '/cours-de-qi-jong' => 'activities#show', :defaults => { :id => '54' }, via: [:get]
+  match '/cours-de-tai-chi-chuan' => 'activities#show', :defaults => { :id => '55' }, via: [:get]
+  match '/cours-de-gym-suédoise' => 'activities#show', :defaults => { :id => '56' }, via: [:get]
+  match '/cours-de-zumba' => 'activities#show', :defaults => { :id => '57' }, via: [:get]
 end
