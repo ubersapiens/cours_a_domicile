@@ -1,5 +1,6 @@
 class ActivitiesController < ApplicationController
   before_action :set_activity, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate, except: [:index,:show]
 
   # GET /activities
   # GET /activities.json
@@ -70,5 +71,11 @@ class ActivitiesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def activity_params
       params.require(:activity).permit(:activity_group_id, :image, :name, :description, :price_one_person, :price_two_persons, :price_group, :you_tube_video, :title)
+    end
+
+    def authenticate
+      authenticate_or_request_with_http_basic do |username, password|
+        username == 'cookies' && password == 'cookies'
+      end
     end
 end

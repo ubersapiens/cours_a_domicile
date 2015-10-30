@@ -1,5 +1,6 @@
 class GiftsController < ApplicationController
   before_action :set_gift, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate, except: [:create,:new]
 
   # GET /gifts
   # GET /gifts.json
@@ -70,5 +71,11 @@ class GiftsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def gift_params
       params.require(:gift).permit(:sender_first_name,:sender_last_name,:sender_civil_status,:sender_email,:sender_phone_number,:gift_amount,:gift_activity,:message_for_receiver,:message_for_admin,:receiver_first_name,:receiver_last_name,:receiver_civil_status,:receiver_email,:receiver_phone_number)
+    end
+
+    def authenticate
+      authenticate_or_request_with_http_basic do |username, password|
+        username == ENV['HTTP_USER'] && password == ENV['HTTP_PASSWORD']
+      end
     end
 end

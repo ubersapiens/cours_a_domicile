@@ -27,4 +27,6 @@ Rails.application.routes.draw do
   match '/cours-de-danse-traditionelle' => 'activity_groups#show', :defaults => { :id => '8' }, via: [:get]
   match '/cours-de-danse-classique' => 'activity_groups#show', :defaults => { :id => '9' }, via: [:get]
 
+  match '/cours-de-yoga-pilates-gym' => 'activity_groups#show', :defaults => { :id => '10' }, via: [:get]
+  match '/cours-de-cours-de-yoga-dynamique' => 'activities#show', :defaults => { :id => '48' }, via: [:get]
 end
