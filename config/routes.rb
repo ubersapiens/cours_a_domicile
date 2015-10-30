@@ -29,4 +29,7 @@ Rails.application.routes.draw do
 
   match '/cours-de-yoga-pilates-gym' => 'activity_groups#show', :defaults => { :id => '10' }, via: [:get]
   match '/cours-de-cours-de-yoga-dynamique' => 'activities#show', :defaults => { :id => '48' }, via: [:get]
+  match '/cours-de-cours-de-yoga-grossesse' => 'activities#show', :defaults => { :id => '50' }, via: [:get]
+  match '/cours-de-cours-de-pilates' => 'activities#show', :defaults => { :id => '51' }, via: [:get]
+  match '/cours-de-cours-de-gym-douce' => 'activities#show', :defaults => { :id => '52' }, via: [:get]
 end
