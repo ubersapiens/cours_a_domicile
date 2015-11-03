@@ -114,4 +114,13 @@ Rails.application.routes.draw do
   match '/coaching-sportif-entre-amis' => 'activities#show', :defaults => { :id => '112' }, via: [:get]
   match '/flash-mob-personnalise' => 'activities#show', :defaults => { :id => '113' }, via: [:get]
   match '/evjf' => 'activities#show', :defaults => { :id => '114' }, via: [:get]
+
+  match '/accompagnement-pro' => 'activity_groups#show', :defaults => { :id => '17' }, via: [:get]
+  match '/preparation-sportive' => 'activities#show', :defaults => { :id => '115' }, via: [:get]
+  match '/preparation-examen' => 'activities#show', :defaults => { :id => '116' }, via: [:get]
+  match '/accompagnement' => 'activities#show', :defaults => { :id => '117' }, via: [:get]
+  match '/spectacle-de-danse' => 'activities#show', :defaults => { :id => '118' }, via: [:get]
+  match '/spectacle-de-chant' => 'activities#show', :defaults => { :id => '119' }, via: [:get]
+  match '/spectacle-de-musique' => 'activities#show', :defaults => { :id => '120' }, via: [:get]
+  match '/sur-mesure' => 'activities#show', :defaults => { :id => '121' }, via: [:get]
 end
