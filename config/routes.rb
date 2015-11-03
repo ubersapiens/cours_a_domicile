@@ -83,4 +83,14 @@ Rails.application.routes.draw do
   match '/cours-de-chant-jazz-gospel' => 'activities#show', :defaults => { :id => '89' }, via: [:get]
   match '/cours-de-technique-vocale' => 'activities#show', :defaults => { :id => '90' }, via: [:get]
   match '/cours-d-interpretation-vocale' => 'activities#show', :defaults => { :id => '91' }, via: [:get]
+
+  ## EVENEMENTS
+  match '/cours-mariage' => 'activity_groups#show', :defaults => { :id => '15' }, via: [:get]
+  match '/ouverture-de-bal-traditionelle' => 'activities#show', :defaults => { :id => '92' }, via: [:get]
+  match '/ouverture-de-bal-moderne' => 'activities#show', :defaults => { :id => '93' }, via: [:get]
+  match '/ouverture-de-bal-danse-a-deux' => 'activities#show', :defaults => { :id => '94' }, via: [:get]
+  match '/ouverture-de-bal-dirty-dancing' => 'activities#show', :defaults => { :id => '95' }, via: [:get]
+  match '/ouverture-de-bal-autres' => 'activities#show', :defaults => { :id => '96' }, via: [:get]
+  match '/ouverture-de-bal-groupes' => 'activities#show', :defaults => { :id => '97' }, via: [:get]
+  match '/EVJF-DANSE-EVG' => 'activities#show', :defaults => { :id => '98' }, via: [:get]
 end
