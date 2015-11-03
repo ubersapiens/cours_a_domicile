@@ -128,4 +128,5 @@ Rails.application.routes.draw do
   match '/organisation-cours-entreprise' => 'activities#show', :defaults => { :id => '122' }, via: [:get]
   match '/team-building' => 'activities#show', :defaults => { :id => '123' }, via: [:get]
   match '/animation-soiree' => 'activities#show', :defaults => { :id => '124' }, via: [:get]
+
 end
