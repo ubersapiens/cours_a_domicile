@@ -38,4 +38,14 @@ Rails.application.routes.draw do
   match '/cours-de-tai-chi-chuan' => 'activities#show', :defaults => { :id => '55' }, via: [:get]
   match '/cours-de-gym-suédoise' => 'activities#show', :defaults => { :id => '56' }, via: [:get]
   match '/cours-de-zumba' => 'activities#show', :defaults => { :id => '57' }, via: [:get]
+
+  match '/coaching-sportif' => 'activity_groups#show', :defaults => { :id => '11' }, via: [:get]
+  match '/coaching-renforcement' => 'activities#show', :defaults => { :id => '58' }, via: [:get]
+  match '/coaching-perte-de-poids' => 'activities#show', :defaults => { :id => '59' }, via: [:get]
+  match '/coaching-cardio' => 'activities#show', :defaults => { :id => '60' }, via: [:get]
+  match '/coaching-prisse-masse' => 'activities#show', :defaults => { :id => '61' }, via: [:get]
+  match '/coaching-grossesse' => 'activities#show', :defaults => { :id => '62' }, via: [:get]
+  match '/coaching-post-grossesse' => 'activities#show', :defaults => { :id => '63' }, via: [:get]
+  match '/coaching-senior' => 'activities#show', :defaults => { :id => '64' }, via: [:get]
+  match '/coaching-zumba' => 'activities#show', :defaults => { :id => '65' }, via: [:get]
 end
