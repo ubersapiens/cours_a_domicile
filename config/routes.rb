@@ -93,4 +93,10 @@ Rails.application.routes.draw do
   match '/ouverture-de-bal-autres' => 'activities#show', :defaults => { :id => '96' }, via: [:get]
   match '/ouverture-de-bal-groupes' => 'activities#show', :defaults => { :id => '97' }, via: [:get]
   match '/EVJF-DANSE-EVG' => 'activities#show', :defaults => { :id => '98' }, via: [:get]
+
+  match '/cours-danse-anniversaire' => 'activity_groups#show', :defaults => { :id => '16' }, via: [:get]
+  match '/cours-de-danse-tete-a-tete' => 'activities#show', :defaults => { :id => '100' }, via: [:get]
+  match '/animation-anniversaire' => 'activities#show', :defaults => { :id => '101' }, via: [:get]
+  match '/cours-chant-anniversaire' => 'activities#show', :defaults => { :id => '102' }, via: [:get]
+  match '/animation-anniversaire-enfant' => 'activities#show', :defaults => { :id => '103' }, via: [:get]
 end
