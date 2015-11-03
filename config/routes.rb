@@ -108,4 +108,10 @@ Rails.application.routes.draw do
   match '/cours-prives-sur-mesure' => 'activities#show', :defaults => { :id => '108' }, via: [:get]
   match '/organisation-de-surprise' => 'activities#show', :defaults => { :id => '109' }, via: [:get]
   match '/cours-entre-amis' => 'activities#show', :defaults => { :id => '110' }, via: [:get]
+
+  match '/cours-de-groupe' => 'activity_groups#show', :defaults => { :id => '17' }, via: [:get]
+  match '/soiree-a-theme' => 'activities#show', :defaults => { :id => '111' }, via: [:get]
+  match '/coaching-sportif-entre-amis' => 'activities#show', :defaults => { :id => '112' }, via: [:get]
+  match '/flash-mob-personnalise' => 'activities#show', :defaults => { :id => '113' }, via: [:get]
+  match '/evjf' => 'activities#show', :defaults => { :id => '114' }, via: [:get]
 end
