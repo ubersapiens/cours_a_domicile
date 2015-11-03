@@ -13,6 +13,14 @@ class ActivityGroupsController < ApplicationController
   def show
   end
 
+  def danse_a_deux
+
+  end
+
+  def autres_danses
+
+  end
+
   # GET /activity_groups/new
   def new
     @activity_group = ActivityGroup.new
