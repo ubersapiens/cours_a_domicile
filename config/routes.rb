@@ -48,4 +48,15 @@ Rails.application.routes.draw do
   match '/coaching-post-grossesse' => 'activities#show', :defaults => { :id => '63' }, via: [:get]
   match '/coaching-senior' => 'activities#show', :defaults => { :id => '64' }, via: [:get]
   match '/coaching-zumba' => 'activities#show', :defaults => { :id => '65' }, via: [:get]
+
+  match '/cours-d-arts-martiaux' => 'activity_groups#show', :defaults => { :id => '12' }, via: [:get]
+  match '/cours-de-boxe' => 'activities#show', :defaults => { :id => '66' }, via: [:get]
+  match '/cours-de-boxe-thai' => 'activities#show', :defaults => { :id => '67' }, via: [:get]
+  match '/cours-de-self-defense' => 'activities#show', :defaults => { :id => '68' }, via: [:get]
+  match '/cours-de-self-defense' => 'activities#show', :defaults => { :id => '69' }, via: [:get]
+  match '/cours-de-lady-boxing' => 'activities#show', :defaults => { :id => '70' }, via: [:get]
+  match '/cours-de-karate' => 'activities#show', :defaults => { :id => '71' }, via: [:get]
+  match '/cours-de-capoeira' => 'activities#show', :defaults => { :id => '72' }, via: [:get]
+  match '/cours-de-kung-fu' => 'activities#show', :defaults => { :id => '73' }, via: [:get]
+  match '/cours-de-thai-chi-chuan' => 'activities#show', :defaults => { :id => '74' }, via: [:get]
 end
