@@ -74,4 +74,13 @@ Rails.application.routes.draw do
   match '/cours-de-batterie' => 'activities#show', :defaults => { :id => '82' }, via: [:get]
   match '/cours-de-flute' => 'activities#show', :defaults => { :id => '83' }, via: [:get]
   match '/cours-de-musique-autres' => 'activities#show', :defaults => { :id => '84' }, via: [:get]
+
+  match '/cours-de-chant' => 'activity_groups#show', :defaults => { :id => '14' }, via: [:get]
+  match '/cours-de-chant-pour-debutant' => 'activities#show', :defaults => { :id => '85' }, via: [:get]
+  match '/cours-de-chant-pour-enfant' => 'activities#show', :defaults => { :id => '86' }, via: [:get]
+  match '/cours-de-chant-lyrique' => 'activities#show', :defaults => { :id => '87' }, via: [:get]
+  match '/cours-de-chant-pop-rock' => 'activities#show', :defaults => { :id => '88' }, via: [:get]
+  match '/cours-de-chant-jazz-gospel' => 'activities#show', :defaults => { :id => '89' }, via: [:get]
+  match '/cours-de-technique-vocale' => 'activities#show', :defaults => { :id => '90' }, via: [:get]
+  match '/cours-d-interpretation-vocale' => 'activities#show', :defaults => { :id => '91' }, via: [:get]
 end
