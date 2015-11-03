@@ -17,6 +17,9 @@ Rails.application.routes.draw do
   get '/vos_avantages', to: 'welcome#vos_avantages'
 
   ## COURS
+  get '/cours-de-danse-de-couple', to: 'activity_groups#couple_danses'
+  get '/cours-particulier-de-danse', to: 'activity_groups#autres_danses'
+
   match '/cours-de-rock' => 'activity_groups#show', :defaults => { :id => '1' }, via: [:get]
   match '/cours-de-danse-latino' => 'activity_groups#show', :defaults => { :id => '2' }, via: [:get]
   match '/cours-de-valse-et-salon' => 'activity_groups#show', :defaults => { :id => '3' }, via: [:get]

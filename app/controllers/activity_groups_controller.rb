@@ -13,7 +13,7 @@ class ActivityGroupsController < ApplicationController
   def show
   end
 
-  def danse_a_deux
+  def couple_danses
 
   end
 
