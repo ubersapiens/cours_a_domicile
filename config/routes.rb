@@ -99,4 +99,13 @@ Rails.application.routes.draw do
   match '/animation-anniversaire' => 'activities#show', :defaults => { :id => '101' }, via: [:get]
   match '/cours-chant-anniversaire' => 'activities#show', :defaults => { :id => '102' }, via: [:get]
   match '/animation-anniversaire-enfant' => 'activities#show', :defaults => { :id => '103' }, via: [:get]
+
+  match '/autres-evenements' => 'activity_groups#show', :defaults => { :id => '17' }, via: [:get]
+  match '/bar-mitsva' => 'activities#show', :defaults => { :id => '104' }, via: [:get]
+  match '/pot-de-depart' => 'activities#show', :defaults => { :id => '105' }, via: [:get]
+  match '/cours-de-danse-rallye' => 'activities#show', :defaults => { :id => '106' }, via: [:get]
+  match '/preparation-bal-de-vienne' => 'activities#show', :defaults => { :id => '107' }, via: [:get]
+  match '/cours-prives-sur-mesure' => 'activities#show', :defaults => { :id => '108' }, via: [:get]
+  match '/organisation-de-surprise' => 'activities#show', :defaults => { :id => '109' }, via: [:get]
+  match '/cours-entre-amis' => 'activities#show', :defaults => { :id => '110' }, via: [:get]
 end
