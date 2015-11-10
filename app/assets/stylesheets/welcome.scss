@@ -63,8 +63,8 @@ html {
     }
   }
 
-  .fa-3x {
-    color:#f20661;
+  .logo-bird {
+    height:60px;
   }
 
   #header-descriptors {
@@ -95,6 +95,28 @@ html {
         color:white;
       }
     }
+  }
+}
+
+#testimonials-container {
+  padding-top:2em;
+  color:white;
+  background: #f20661;
+  font-family: 'Raleway';
+  font-size: 1.2em;
+}
+
+#why-container {
+  padding-bottom:8em;
+  padding-top:2em;
+  color:white;
+  background: #373B4F;
+  font-family: 'Raleway';
+  font-size: 1.2em;
+  p {
+    font-size:1.2em;
+    line-height: 1.5em; 
+    font-weight:300;
   }
 }
 
@@ -138,7 +160,7 @@ html {
 #events-container {
   padding-bottom:8em;
   padding-top:2em;
-  background: black;
+  background: #373B4F;
   color: white;
   h1 {
     padding: 1em;
@@ -202,7 +224,7 @@ html {
 
 #social-container {
   padding-bottom:5em;
-  background: black;
+  background: #373B4F;
   color: white;
   h1 {
     padding: 1em;

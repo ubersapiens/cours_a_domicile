@@ -73,7 +73,7 @@ class ActivityGroupsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_activity_group
-      @activity_group = ActivityGroup.friendly.find(params[:id])
+      @activity_group = ActivityGroup.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

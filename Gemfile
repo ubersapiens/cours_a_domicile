@@ -19,6 +19,7 @@ gem 'dotenv-rails'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'friendly_id'
+gem 'puma'
 
 group :development, :test do
   gem 'byebug'
