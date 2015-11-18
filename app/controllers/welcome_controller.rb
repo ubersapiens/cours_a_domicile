@@ -25,4 +25,6 @@ class WelcomeController < ApplicationController
   def vos_avantages
     
   end
+  def mentions_legales
+  end
 end

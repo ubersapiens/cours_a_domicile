@@ -40,7 +40,22 @@
       </div>
       <div class="row" style="margin:2em 0;">
         <div class="col-lg-12">
-          <a href="/students/new" id="activity-button">Je fais ma demande</a>
+          <a href="#formActivity" id="activity-button">Je fais ma demande</a>
+        </div>
+      </div>
+      <a name="formActivity"></a>
+      <div class="row">
+        <div class="container-fluid" id="new-student-main-container">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center" id="header-title">
+                <p></p>
+              </div>
+            </div>
+
+            <%= render :partial => 'students/form_activity' %>
+
+          </div>
         </div>
       </div>
       <div class="row">

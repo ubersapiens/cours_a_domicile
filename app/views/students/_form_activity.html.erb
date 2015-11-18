@@ -1,0 +1,210 @@
+<%= form_for(@student) do |f| %>
+  <% if @student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@student.errors.count, "error") %> prohibited this student from being saved:</h2>
+
+      <ul>
+      <% @student.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= f.hidden_field :activity_url, :value => @activity.name %>
+  <h2 class="text-center">Reservez vos cours particuliers</h2>
+  <div class="row">
+    <div class="col-lg-2">
+      <div class="field">
+        <%= f.text_field :civil_status, placeholder: 'Civilité' %>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <div class="field">
+        <%= f.text_field :first_name, placeholder: 'Prenom' %>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <div class="field">
+        <%= f.text_field :last_name, placeholder: 'Nom' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="field">
+        <%= f.text_field :email, placeholder: 'Email' %>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="field">
+        <%= f.text_field :phone_number, placeholder: 'Telephone' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.text_field :address, placeholder: 'Adresse' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="field">
+        <%= f.text_field :city, placeholder: 'Ville' %>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="field">
+        <%= f.text_field :postal_code, placeholder: 'Code postal' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <p>Pouvez vous nous en dire plus? (Objectifs, niveau, date d’évènement)</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <%= f.text_area :message, placeholder: 'Message', cols: '30', rows: '5' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <p>En terme de disponibilités, vous souhaitez suivre vos cours :</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-4">
+          <%= f.radio_button(:availability, "disponible") %>
+        </div>
+        <div class="col-lg-8">  
+          <%= f.label(:availability, "peu importe je suis disponible très souvent") %>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="field">
+        <p>ou</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+    <p style="text-decoration:underline; font-weight:700;">Semaine:</p>
+      <div class="row">
+        <div class="col-lg-4">
+          <%= f.radio_button(:availability, "semaine_matin") %>
+        </div>
+        <div class="col-lg-8">  
+          <%= f.label(:availability, "matin") %>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+    <p style="text-decoration:underline; font-weight:700;">Weekend:</p>
+      <div class="row">
+        <div class="col-lg-4">
+          <%= f.radio_button(:availability, "weekend_matin") %>
+        </div>
+        <div class="col-lg-8">  
+          <%= f.label(:availability, "matin") %>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-4">
+          <%= f.radio_button(:availability, "semaine_midi") %>
+        </div>
+        <div class="col-lg-8">  
+          <%= f.label(:availability, "midi") %>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-4">
+          <%= f.radio_button(:availability, "weekend_midi") %>
+        </div>
+        <div class="col-lg-8">  
+          <%= f.label(:availability, "midi") %>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-4">
+          <%= f.radio_button(:availability, "semaine_apres_midi") %>
+        </div>
+        <div class="col-lg-8">  
+          <%= f.label(:availability, "après-midi") %>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-4">
+          <%= f.radio_button(:availability, "weekend_apres_midi") %>
+        </div>
+        <div class="col-lg-8">  
+          <%= f.label(:availability, "après-midi") %>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-4">
+          <%= f.radio_button(:availability, "semaine_soiree") %>
+        </div>
+        <div class="col-lg-8">  
+          <%= f.label(:availability, "soirée") %>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-4">
+          <%= f.radio_button(:availability, "weekend_soiree") %>
+        </div>
+        <div class="col-lg-8">  
+          <%= f.label(:availability, "soirée") %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="col-lg-1">
+          <%= f.check_box :general_conditions %>
+        </div>
+        <div class="col-lg-11">  
+           <%= f.label "J'accepte les CGV" %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row text-center">
+    <div class="col-lg-12">
+      <div class="actions">
+        <%= f.submit 'J\'envoie' %>
+      </div>
+    </div>
+  </div>
+<% end %>

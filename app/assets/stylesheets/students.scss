@@ -18,12 +18,12 @@ form.new_student {
   background: #f20661;
   color:white;
   font-family: 'Raleway';
-  font-size: 1.2em;
+  font-size: 1em;
 
   p {
-    font-size:1.8em;
+    font-size:1.5em;
     line-height:1.1em;
-    font-weight:300;
+    font-weight:500;
     font-family: 'Raleway';
   }
 
@@ -33,11 +33,13 @@ form.new_student {
   }
 
   input {
+    color:#3d3d3d;
     width:100%;
     padding: 1em;
   }
 
   textarea {
+    color:#3d3d3d;
     width:100%;
     padding: 1em;
   }
@@ -48,10 +50,18 @@ form.new_student {
     color:#3d3d3d;
   }
 
+  .col-lg-8 {
+    text-align:left;
+  }
+  .col-lg-11 {
+    text-align:left;
+  }
+
   label {
     font-family:'Raleway';
     font-weight:500;
     font-size:1.3em;
+    text-align: left !important;
   }
 
   select {

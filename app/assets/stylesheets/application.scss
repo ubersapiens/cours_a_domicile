@@ -94,21 +94,27 @@
 footer {
   background: #373B4F;
   color:white;
-  padding-bottom: 5em;
-  h2 {
-    font-size:2.5em;
+ ul {
+    list-style:none;
+    display: flex;
+    li {
+      padding: 2em;
+      font-size: 1.5em;
+      font-weight: 400;
+      font-family: 'Raleway';
+    }
   }
-  p {
-    font-size: 1.4em;
-    font-family: Lato;
-  }
-  li a {
-    font-size: 1.4em;
-    font-family: Lato;
+  a {
+    color: white;
     text-decoration:none;
-    color:white;
+    background:transparent;
+    &:hover {
+      color: white;
+      text-decoration:none;
+    }
     &:visited {
-      color:white;
+      color: white;
+      text-decoration:none;
     }
   }
 }

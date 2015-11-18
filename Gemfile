@@ -20,6 +20,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'friendly_id'
 gem 'puma'
+gem 'twitter'
 
 group :development, :test do
   gem 'byebug'
