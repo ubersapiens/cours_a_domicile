@@ -1,5 +1,5 @@
 <style media="screen">
-  .image_div { background-image: url(<%= @activity_group.picture %>); }
+  #image-div { background-image: url(<%= @activity_group.picture %>); }
 </style>
 <div class="container-fluid" id="activity-group-header-container">
   <div class="row">
@@ -19,7 +19,7 @@
         <div class="col-lg-7">
           <div class="row">
             <% @activity_group.activities.each do |a| %>
-              <div class="col-lg-2" style="border:1px solid black;margin:1em;padding:2.5em 1em 1em 1em;height:200px;width:200px;background: white;color:#f20661;">
+              <div class="col-lg-2" id="image-div" style="border:1px solid black;margin:1em;padding:2.5em 1em 1em 1em;height:200px;width:200px;color:#f20661;">
                 <%= a.name %><br>
                 <%= link_to 'Voir', a %>
               </div>
