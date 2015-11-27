@@ -1,5 +1,8 @@
 <style media="screen">
-  #image-div { background-image: url(<%= @activity_group.picture %>); }
+  #image-div { background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url(<%= @activity_group.picture %>); }
 </style>
 <div class="container-fluid" id="activity-group-header-container">
   <div class="row">
