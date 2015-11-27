@@ -78,7 +78,7 @@ class ActivityGroupsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def activity_group_params
-      params.require(:activity_group).permit({:activity_ids => []}, :activities, :description, :name)
+      params.require(:activity_group).permit({:activity_ids => []}, :activities, :description, :name, :picture)
     end
 
     def authenticate
