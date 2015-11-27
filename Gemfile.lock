@@ -234,7 +234,6 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 3.3.3)
   byebug
-  carrierwave
   carrierwave-aws
   coffee-rails (~> 4.1.0)
   dotenv-rails
