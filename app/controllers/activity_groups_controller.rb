@@ -14,11 +14,11 @@ class ActivityGroupsController < ApplicationController
   end
 
   def couple_danses
-
+    @activity_groups = ActivityGroup.all.first(4)
   end
 
   def autres_danses
-
+     @activity_groups = ActivityGroup.all.limit(5).offset(2)
   end
 
   # GET /activity_groups/new

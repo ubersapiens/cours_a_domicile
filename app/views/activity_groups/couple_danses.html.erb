@@ -1,1 +1,48 @@
-couple_danses.html.erb
+<style media="screen">
+  #image-div { background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url('https://s3.eu-central-1.amazonaws.com/rails-demo-production-coursparticuliers/DANSE+DE+COUPLE+FAMILY_opt.jpg'); }
+  #activity-group-main-container { background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url('https://s3.eu-central-1.amazonaws.com/rails-demo-production-coursparticuliers/DANSE+DE+COUPLE+FAMILY_opt.jpg'); }
+</style>
+<div class="container-fluid" id="activity-group-header-container">
+  <div class="row">
+    <div class="col-lg-12 text-center" id="header-title">
+      <h1>Danse de couple</h1>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" id="activity-group-main-container">
+  <div class="row">
+    <div class="col-lg-12 text-center" id="header-title">
+      <p id="notice"><%= notice %></p>
+      <div class="row">
+        <div class="col-lg-5">
+          <p>Lorem ipsum.</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="row">
+            <% @activity_groups.each do |a| %>
+              <div class="col-lg-2" id="image-div" style="border:1px solid black;margin:1em;padding:2.5em 1em 1em 1em;height:200px;width:200px;color:#f20661;">
+                <%= a.name %><br>
+                <%= link_to 'Voir', a %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin:2em 0;">
+        <div class="col-lg-12">
+          <a href="/students/new" id="activity-button">Je fais ma demande</a>
+        </div>
+      </div>
+      <div class="row">
+        <%= link_to 'Back', root_path %>
+      </div>
+      
+    </div>
+  </div>
+</div>
