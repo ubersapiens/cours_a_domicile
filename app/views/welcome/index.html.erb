@@ -228,88 +228,34 @@
             <div class="carousel-inner">
               <div class="item active">
                 <div class="row">
-                  <div class="col-xs-3">
-                    <a href="#">
-                      <%= image_tag('event1.jpg', :alt => "Image", :class => "img-responsive") %>
-                      <div class="carousel-caption">
-                        <h2 style="font-weight:900;font-size:1.4em;">EVJF cours de danse pour elle</h2>
-                        <h2>A partir de 500 EUR</h2>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-xs-3">
-                    <a href="#">
-                      <%= image_tag('event2.jpg', :alt => "Image", :class => "img-responsive") %>
-                      <div class="carousel-caption">
-                        <h2 style="font-weight:900;font-size:1.4em;">Ouverture du bal moderne</h2>
-                        <h2>A partir de 200 EUR</h2>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-xs-3">
-                    <a href="#">
-                      <%= image_tag('event3.jpg', :alt => "Image", :class => "img-responsive") %>
-                      <div class="carousel-caption">
-                        <h2 style="font-weight:900;font-size:1.4em;">Soiree a theme musique</h2>
-                        <h2>A partir de 100 EUR</h2>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-xs-3">
-                    <a href="#">
-                      <%= image_tag('event4.jpg', :alt => "Image", :class => "img-responsive") %>
-                      <div class="carousel-caption">
-                        <h2 style="font-weight:900;font-size:1.4em;">Pretement de sermont</h2>
-                        <h2>A partir de 600 EUR</h2>
-                      </div>
-                    </a>
-                  </div>
+                  <% @activity_groups4.each do |ac4| %>
+                    <div class="col-xs-3">
+                      <%= link_to activity_group_path(ac4) do %>
+                        <%= image_tag ac4.picture, :alt => "Image", :class => "img-responsive", :style => "height:255px; width:255px;" %>
+                        <div class="carousel-caption">
+                          <h2 style="font-weight:900;font-size:1.4em;"><%= ac4.name %></h2>
+                          <h2>A partir de 24.99 EUR</h2>
+                        </div>
+                      <% end %>
+                    </div>
+                  <% end %>
                 </div>
-                <!--/row-->
               </div>
-              <!--/item-->
               <div class="item">
                 <div class="row">
-                  <div class="col-xs-3">
-                    <a href="#">
-                      <%= image_tag('event1.jpg', :alt => "Image", :class => "img-responsive") %>
-                      <div class="carousel-caption">
-                        <h2 style="font-weight:900;font-size:1.4em;">EVJF cours de danse pour elle</h2>
-                        <h2>A partir de 500 EUR</h2>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-xs-3">
-                    <a href="#">
-                      <%= image_tag('event2.jpg', :alt => "Image", :class => "img-responsive") %>
-                      <div class="carousel-caption">
-                        <h2 style="font-weight:900;font-size:1.4em;">Ouverture du bal moderne</h2>
-                        <h2>A partir de 200 EUR</h2>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-xs-3">
-                    <a href="#">
-                      <%= image_tag('event3.jpg', :alt => "Image", :class => "img-responsive") %>
-                      <div class="carousel-caption">
-                        <h2 style="font-weight:900;font-size:1.4em;">Soiree a theme musique</h2>
-                        <h2>A partir de 100 EUR</h2>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-xs-3">
-                    <a href="#">
-                      <%= image_tag('event4.jpg', :alt => "Image", :class => "img-responsive") %>
-                      <div class="carousel-caption">
-                        <h2 style="font-weight:900;font-size:1.4em;">Pretement de sermont</h2>
-                        <h2>A partir de 600 EUR</h2>
-                      </div>
-                    </a>
-                  </div>
+                  <% @activity_groups5.each do |ac5| %>
+                    <div class="col-xs-3">
+                      <%= link_to activity_group_path(ac5) do %>
+                        <%= image_tag ac5.picture, :alt => "Image", :class => "img-responsive", :style => "height:255px; width:255px;" %>
+                        <div class="carousel-caption">
+                          <h2 style="font-weight:900;font-size:1.4em;"><%= ac5.name %></h2>
+                          <h2>A partir de 24.99 EUR</h2>
+                        </div>
+                      <% end %>
+                    </div>
+                  <% end %>
                 </div>
-                <!--/row-->
               </div>
-              <!--/item-->
             </div>
             <!--/carousel-inner--> 
             <a class="left carousel-control" href="#eventsCarousel" data-slide="prev">‹</a>
