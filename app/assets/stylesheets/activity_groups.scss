@@ -3,13 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #activity-group-header-container {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ), image-url('background_fitness.jpg');
+  background: #373B4F;
   padding-bottom:2em;
-  background-position-y: 60%;
-  background-size:cover;
   padding-top:100px;
 
   #header-title {
