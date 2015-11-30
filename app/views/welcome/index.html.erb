@@ -161,13 +161,13 @@
                 <div class="row">
                   <% @activity_groups1.each do |ac1| %>
                     <div class="col-xs-3">
-                      <a href="/cours-de-danse-latino">
+                      <% link_to activity_group_path(ac1) do %>
                         <%= image_tag ac1.picture, :alt => "Image", :class => "img-responsive", :style => "height:255px; width:255px;" %>
                         <div class="carousel-caption">
                           <h2 style="font-weight:900;font-size:1.4em;"><%= ac1.name %></h2>
                           <h2>A partir de 24.99 EUR</h2>
                         </div>
-                      </a>
+                      <% end %>
                     </div>
                   <% end %>
                 </div>
@@ -176,13 +176,13 @@
                 <div class="row">
                   <% @activity_groups2.each do |ac2| %>
                     <div class="col-xs-3">
-                      <a href="/cours-de-danse-latino">
+                      <% link_to activity_group_path(ac2) do %>
                         <%= image_tag ac2.picture, :alt => "Image", :class => "img-responsive", :style => "height:255px; width:255px;" %>
                         <div class="carousel-caption">
                           <h2 style="font-weight:900;font-size:1.4em;"><%= ac2.name %></h2>
                           <h2>A partir de 24.99 EUR</h2>
                         </div>
-                      </a>
+                      <% end %>
                     </div>
                   <% end %>
                 </div>
@@ -191,13 +191,13 @@
                 <div class="row">
                   <% @activity_groups3.each do |ac3| %>
                     <div class="col-xs-3">
-                      <a href="/cours-de-danse-latino">
+                      <% link_to activity_group_path(ac3) do %>
                         <%= image_tag ac3.picture, :alt => "Image", :class => "img-responsive", :style => "height:255px; width:255px;" %>
                         <div class="carousel-caption">
                           <h2 style="font-weight:900;font-size:1.4em;"><%= ac3.name %></h2>
                           <h2>A partir de 24.99 EUR</h2>
                         </div>
-                      </a>
+                      <% end %>
                     </div>
                   <% end %>
                 </div>
