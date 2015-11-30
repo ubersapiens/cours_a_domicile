@@ -3,6 +3,9 @@ class WelcomeController < ApplicationController
     @student = Student.new
     @gift = Gift.new
     @newsletter = Newsletter.new
+    @activity_groups1 = ActivityGroup.first(4)
+    @activity_groups2 = ActivityGroup.limit(4).offset(2)
+    @activity_groups3 = ActivityGroup.limit(4).offset(6)
   end
   def comment_ca_marche
     

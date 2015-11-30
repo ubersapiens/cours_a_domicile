@@ -159,88 +159,49 @@
             <div class="carousel-inner">
               <div class="item active">
                 <div class="row">
-                  <div class="col-xs-3">
-                    <a href="/cours-de-danse-latino">
-                      <%= image_tag('dancing1.jpg', :alt => "Image", :class => "img-responsive") %>
-                      <div class="carousel-caption">
-                        <h2 style="font-weight:900;font-size:1.4em;">Cours de danse latino</h2>
-                        <h2>A partir de 24.99 EUR</h2>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-xs-3">
-                    <a href="/cours-de-rock">
-                      <%= image_tag('dancing2.jpg', :alt => "Image", :class => "img-responsive") %>
-                      <div class="carousel-caption">
-                        <h2 style="font-weight:900;font-size:1.4em;">Cours de rock & swing</h2>
-                        <h2>A partir de 24.99 EUR</h2>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-xs-3">
-                    <a href="/cours-de-valse-et-salon">
-                      <%= image_tag('dancing3.jpg', :alt => "Image", :class => "img-responsive") %>
-                      <div class="carousel-caption">
-                        <h2 style="font-weight:900;font-size:1.4em;">Cours de valse et salon</h2>
-                        <h2>A partir de 24.99 EUR</h2>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-xs-3">
-                    <a href="/cours-de-danses-urbaines">
-                      <%= image_tag('dancing4.jpg', :alt => "Image", :class => "img-responsive") %>
-                      <div class="carousel-caption">
-                        <h2 style="font-weight:900;font-size:1.4em;">Cours de danses urbaines</h2>
-                        <h2>A partir de 24.99 EUR</h2>
-                      </div>
-                    </a>
-                  </div>
+                  <% @activity_groups1.each do |ac1| %>
+                    <div class="col-xs-3">
+                      <a href="/cours-de-danse-latino">
+                        <%= image_tag ac1.picture, :alt => "Image", :class => "img-responsive" %>
+                        <div class="carousel-caption">
+                          <h2 style="font-weight:900;font-size:1.4em;"><%= ac1.name %></h2>
+                          <h2>A partir de 24.99 EUR</h2>
+                        </div>
+                      </a>
+                    </div>
+                  <% end %>
                 </div>
-                <!--/row-->
               </div>
-              <!--/item-->
               <div class="item">
                 <div class="row">
-                  <div class="col-xs-3">
-                    <a href="/cours-de-danse-latino">
-                      <%= image_tag('dancing1.jpg', :alt => "Image", :class => "img-responsive") %>
-                      <div class="carousel-caption">
-                        <h2 style="font-weight:900;font-size:1.4em;">Cours de danse latino</h2>
-                        <h2>A partir de 24.99 EUR</h2>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-xs-3">
-                    <a href="/cours-de-rock">
-                      <%= image_tag('dancing2.jpg', :alt => "Image", :class => "img-responsive") %>
-                      <div class="carousel-caption">
-                        <h2 style="font-weight:900;font-size:1.4em;">Cours de rock et swing</h2>
-                        <h2>A partir de 24.99 EUR</h2>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-xs-3">
-                    <a href="/cours-de-valse-et-salon">
-                      <%= image_tag('dancing3.jpg', :alt => "Image", :class => "img-responsive") %>
-                      <div class="carousel-caption">
-                        <h2 style="font-weight:900;font-size:1.4em;">Cours de valse et salon</h2>
-                        <h2>A partir de 24.99 EUR</h2>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-xs-3">
-                    <a href="/cours-de-danses-urbaines">
-                      <%= image_tag('dancing4.jpg', :alt => "Image", :class => "img-responsive") %>
-                      <div class="carousel-caption">
-                        <h2 style="font-weight:900;font-size:1.4em;">Cours de danses urbaines</h2>
-                        <h2>A partir de 24.99 EUR</h2>
-                      </div>
-                    </a>
-                  </div>
+                  <% @activity_groups2.each do |ac2| %>
+                    <div class="col-xs-3">
+                      <a href="/cours-de-danse-latino">
+                        <%= image_tag ac2.picture, :alt => "Image", :class => "img-responsive" %>
+                        <div class="carousel-caption">
+                          <h2 style="font-weight:900;font-size:1.4em;"><%= ac2.name %></h2>
+                          <h2>A partir de 24.99 EUR</h2>
+                        </div>
+                      </a>
+                    </div>
+                  <% end %>
                 </div>
-                <!--/row-->
               </div>
-              <!--/item-->
+              <div class="item">
+                <div class="row">
+                  <% @activity_groups3.each do |ac3| %>
+                    <div class="col-xs-3">
+                      <a href="/cours-de-danse-latino">
+                        <%= image_tag ac3.picture, :alt => "Image", :class => "img-responsive" %>
+                        <div class="carousel-caption">
+                          <h2 style="font-weight:900;font-size:1.4em;"><%= ac3.name %></h2>
+                          <h2>A partir de 24.99 EUR</h2>
+                        </div>
+                      </a>
+                    </div>
+                  <% end %>
+                </div>
+              </div>
             </div>
             <a name="events-carousel"></a>
             <!--/carousel-inner--> 
