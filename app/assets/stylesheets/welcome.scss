@@ -146,11 +146,21 @@ html {
       }
     }
     .carousel-control {
-      top:50%;
+      top:10%;
       width:auto;
       height:1em;
       background:transparent;
+      color:white;
+      font-size:10em;
     }
+
+    .left.carousel-control {
+      margin-left:-40px;
+    }
+    .right.carousel-control {
+      margin-right:-40px;
+    }
+
     .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right  {
       position:static;
       display:block;
@@ -178,10 +188,19 @@ html {
       }
     }
     .carousel-control {
-      top:50%;
+      top:10%;
       width:auto;
       height:1em;
       background:transparent;
+      color:white;
+      font-size:10em;
+    }
+
+    .left.carousel-control {
+      margin-left:-40px;
+    }
+    .right.carousel-control {
+      margin-right:-40px;
     }
     .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right  {
       position:static;
