@@ -13,6 +13,79 @@ form.new_student {
   }
 }
 
+#new-student-alt-container {
+  display:none;
+  padding-bottom:2em;
+  background: #778899;
+  color:white;
+  font-family: 'Raleway';
+  font-size: 1em;
+
+  p {
+    font-size:1.5em;
+    line-height:1.1em;
+    font-weight:500;
+    font-family: 'Raleway';
+  }
+
+  h1 {
+    padding: 1em;
+    font-family: 'Raleway';
+  }
+
+  input {
+    color:#3d3d3d;
+    width:100%;
+    padding: 1em;
+  }
+
+  textarea {
+    color:#3d3d3d;
+    width:100%;
+    padding: 1em;
+  }
+
+  input[type="date"] {
+    width:55%;
+    background-color:white;
+    color:#3d3d3d;
+  }
+
+  .col-lg-8 {
+    text-align:left;
+  }
+  .col-lg-11 {
+    text-align:left;
+  }
+
+  label {
+    font-family:'Raleway';
+    font-weight:500;
+    font-size:1.3em;
+    text-align: left !important;
+  }
+
+  select {
+    color: #3d3d3d;
+    width:30%;
+    font-size:1.2em;
+  }
+
+  input[type="submit"] {
+    width:40%;
+    background-color:#f20661;
+    color:white;
+    font-size:1.2em;
+    padding:1em 3em;
+    margin-top:1em;
+  }
+
+  #header-title {
+    margin:2em 0;
+  }
+
+}
+
 #new-student-main-container {
   padding-bottom:2em;
   background: #778899;
