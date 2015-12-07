@@ -74,7 +74,7 @@ html {
 
     h2 {
       font-weight:500;
-      font-size:2em;
+      font-size:1.7em;
     }
   }
 
@@ -140,6 +140,9 @@ html {
   }
 
   #coursCarousel {
+    .img-responsive:hover {
+      opacity:0.9;
+    }
     .carousel-control {
       top:50%;
       width:auto;
@@ -167,6 +170,9 @@ html {
     font-family: 'Raleway';
   }
   #eventsCarousel {
+    .img-responsive:hover {
+      opacity:0.9;
+    }
     .carousel-control {
       top:50%;
       width:auto;
