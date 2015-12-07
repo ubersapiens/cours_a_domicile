@@ -57,6 +57,20 @@
       color:#fff;
     }
   }
+  
+  .megamenu ul {
+     padding-bottom:15px;
+  }
+  
+  .megamenu > .dropdown-menu {
+     min-width:950px;
+     right:-150%;
+  } 
+
+  .megamenu > #dropdown-about {
+     right:0;
+     left:20%;
+  } 
 
   .megamenu {
     h3 {
@@ -111,6 +125,7 @@ footer {
     &:hover {
       color: white;
       text-decoration:none;
+      background:transparent;
     }
     &:visited {
       color: white;

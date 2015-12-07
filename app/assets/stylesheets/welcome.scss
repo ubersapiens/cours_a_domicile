@@ -110,7 +110,7 @@ html {
   padding-bottom:8em;
   padding-top:2em;
   color:white;
-  background: #373B4F;
+  background: #778899;
   font-family: 'Raleway';
   font-size: 1.2em;
   p {
@@ -259,11 +259,19 @@ html {
     padding: 1em;
     font-family: 'Raleway';
   }
+  a {
+    color: white;
+    background: transparent;
+
+    &:hover {
+      color:#f20661;
+    }
+  }
 }
 
 #partners-container {
   padding-bottom:5em;
-  background: #f20661;
+  background: #778899;
   color: white;
   h1 {
     padding: 1em;
@@ -273,6 +281,28 @@ html {
   .col-lg-4 {
     text-align:center;
     width:25%;
+  }
+}
+
+#press-container {
+  padding-bottom:5em;
+  background: #f20661;
+  color: white;
+  h1 {
+    padding: 1em;
+    font-family: 'Raleway';
+  }
+
+  p {
+    font-size:1.2em;
+    line-height: 1.5em; 
+    font-weight:300;
+  }
+
+  a {
+    text-decoration:underline;
+    color:white;
+    background:transparent;
   }
 }
 
