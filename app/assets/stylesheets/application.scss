@@ -108,7 +108,17 @@
 footer {
   background: #373B4F;
   color:white;
- ul {
+  
+  #header-title {
+    padding-top:3em;
+    font-family:'Raleway';
+    color:white;
+    h1 {
+      font-weight:500;
+      font-size:3em;
+    }
+  }
+  ul {
     list-style:none;
     display: flex;
     li {
