@@ -33,6 +33,14 @@
   #image-div {
     background-size:cover;
     background-position-x: 50%;
+    a {
+      color:white;
+      background:transparent;
+      text-decoration:none;
+      &:hover {
+        color:#f20661; 
+      }
+    }
   }
   p {
     font-family:'Raleway';

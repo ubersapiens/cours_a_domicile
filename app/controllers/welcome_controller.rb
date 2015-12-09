@@ -33,4 +33,7 @@ class WelcomeController < ApplicationController
   end
   def mentions_legales
   end
+  def contact
+    
+  end
 end

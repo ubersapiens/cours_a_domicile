@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get '/recrutements', to: 'welcome#recrutements'
   get '/vos_avantages', to: 'welcome#vos_avantages'
   get '/mentions-legales', to: 'welcome#mentions_legales'
+  get '/contact', to: 'welcome#contact'
 
   ## COURS
   get '/cours-de-danse-de-couple', to: 'activity_groups#couple_danses'

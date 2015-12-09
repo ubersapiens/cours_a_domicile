@@ -108,6 +108,22 @@
 footer {
   background: #373B4F;
   color:white;
+  h1 {
+    padding: 1em;
+    font-family: 'Raleway';
+  }
+
+  p {
+    font-size:1.2em;
+    line-height: 1.5em; 
+    font-weight:300;
+  }
+
+  #press-link {
+    text-decoration:underline;
+    color:white;
+    background:transparent;
+  }
   
   #header-title {
     padding-top:3em;
