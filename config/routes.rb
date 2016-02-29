@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   ## STATIC PAGES
   get '/comment_ca_marche', to: 'welcome#comment_ca_marche'
   get '/faq', to: 'welcome#faq'
+  get '/tarifs', to: 'welcome#tarifs'
   get '/galerie_des_profs', to: 'welcome#galerie_des_profs'
   get '/qui_sommes_nous', to: 'welcome#qui_sommes_nous'
   get '/qui_sont_les_professeurs', to: 'welcome#qui_sont_les_professeurs'

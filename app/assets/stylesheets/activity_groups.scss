@@ -30,6 +30,15 @@
     line-height:1.2em;
     padding-right:0.5em;
   }
+  p#disclaimer {
+    font-style:italic;
+    font-size:0.6em;
+    margin-top:3em;
+  }
+  
+  .logo-sap {
+    height: 100px;
+  }
   #image-div {
     background-size:cover;
     background-position-x: 50%;
@@ -46,6 +55,13 @@
     font-family:'Raleway';
     font-size:1em;
     line-height:1.4em;
+  }
+}
+
+form.edit_activity_group {
+  color: #3d3d3d;
+  input {
+    width: 100%;
   }
 }
 

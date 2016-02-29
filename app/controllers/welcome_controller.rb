@@ -16,6 +16,10 @@ class WelcomeController < ApplicationController
   def faq
     
   end
+
+  def tarifs
+  end
+  
   def galerie_des_profs
     
   end

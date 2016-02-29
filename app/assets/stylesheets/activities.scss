@@ -38,8 +38,28 @@
       text-align:center !important;
     }
   }
+  p#disclaimer {
+    font-style:italic;
+    font-size:0.6em;
+    margin-top:3em;
+  }
+  
+  .logo-sap {
+    height: 100px;
+  }
 }
 
+form.edit_activity {
+  color: #3d3d3d;
+  input {
+    width: 100%;
+  }
+}
+
+#disclaimer {
+  font-style:italic;
+  font-size:0.6em;
+}
 
 #new_activity {
   input {
