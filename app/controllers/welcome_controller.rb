@@ -43,4 +43,8 @@ class WelcomeController < ApplicationController
   def presse
     
   end
+
+  def testimonials
+  end
+  
 end

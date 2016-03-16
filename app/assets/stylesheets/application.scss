@@ -21,6 +21,12 @@
 
 // NAVIGATION
 
+form {
+  input[type="text"], textarea {
+    color: #3d3d3d !important;
+  }
+}
+
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
