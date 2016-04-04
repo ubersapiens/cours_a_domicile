@@ -1,30 +1,151 @@
-<div class="container" id="teacher-profile-container">
+<div class="container-fluid" id="activity-group-header-container">
   <div class="row">
-    <p id="notice"><%= notice %></p>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-6">
-      <%= image_tag @teacher.avatar.url %>
-    </div>
-    <div class="col-lg-6">
-      <p>Prenom : <%= @teacher.first_name %></p>
-      <p>Email : <%= @teacher.email %></p>
-      <p>Mobile : <%= @teacher.phone_number %></p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-12">
-      <p>Mots du professeur</p>
-      <p><%= @teacher.description %></p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-12">
-      <%= link_to 'Edit', edit_teacher_path(@teacher) %> |
-      <%= link_to 'Back', teachers_path %>
+    <div class="col-lg-12 text-center" id="header-title">
+      <h1>Teacher profile</h1>
     </div>
   </div>
 </div>
+<div class="container-fluid" id="activity-group-main-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12" id="header-title">
+        <table>
+
+          <tbody>
+            <tr>
+              <td style="font-weight:900;">Civil status</td>
+              <td><%= @teacher.civil_status %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">First name</td>
+              <td><%= @teacher.first_name %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Last name</td>
+              <td><%= @teacher.last_name %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Email</td>
+              <td><%= @teacher.email %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Phone number</td>
+              <td><%= @teacher.phone_number %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Date of birth</td>
+              <td><%= @teacher.date_of_birth %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Nationality</td>
+              <td><%= @teacher.nationality %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Address</td>
+              <td><%= @teacher.address %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Address compliment</td>
+              <td><%= @teacher.address_compliment %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Country</td>
+              <td><%= @teacher.country %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Postal code</td>
+              <td><%= @teacher.postal_code %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Diploma</td>
+              <td><%= @teacher.diploma %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Activity group #1</td>
+              <td><%= @teacher.activity_group_1 %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Activity group #2</td>
+              <td><%= @teacher.activity_group_2 %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Activity group #3</td>
+              <td><%= @teacher.activity_group_3 %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Activity #1</td>
+              <td><%= @teacher.activity_1 %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Activity #1 (level)</td>
+              <td><%= @teacher.activity_1_level %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Activity #2</td>
+              <td><%= @teacher.activity_2 %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Activity #2 (level)</td>
+              <td><%= @teacher.activity_2_level %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Activity #3</td>
+              <td><%= @teacher.activity_3 %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Activity #3 (level)</td>
+              <td><%= @teacher.activity_3_level %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Start date</td>
+              <td><%= @teacher.start_date %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Availability</td>
+              <td><%= @teacher.availability %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Teaching area #1</td>
+              <td><%= @teacher.teaching_area_1 %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Teaching area #1 (perimeter)</td>
+              <td><%= @teacher.teaching_area_1_perimeter %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Teaching area #2</td>
+              <td><%= @teacher.teaching_area_2 %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Teaching area #2 (perimeter)</td>
+              <td><%= @teacher.teaching_area_2_perimeter %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Teaching area #3</td>
+              <td><%= @teacher.teaching_area_3 %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Teaching area #3 (perimeter)</td>
+              <td><%= @teacher.teaching_area_3_perimeter %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Has a vehicle</td>
+              <td><%= @teacher.has_a_vehicle %></td>
+            </tr>
+            <tr>
+              <td style="font-weight:900;">Description</td>
+              <td><%= @teacher.description %></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <%= link_to 'Edit', edit_teacher_path(@teacher) %> |
+        <%= link_to 'Back', teachers_path %>
+      </div>
+    </div>
+  </div>
+</div>
+
