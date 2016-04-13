@@ -1,6 +1,6 @@
 class ActivitiesController < ApplicationController
   before_action :set_activity, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate, except: [:index,:show]
+  before_filter :authenticate, only: [:index, :show, :edit, :update, :destroy]
 
   # GET /activities
   # GET /activities.json
@@ -76,7 +76,7 @@ class ActivitiesController < ApplicationController
 
     def authenticate
       authenticate_or_request_with_http_basic do |username, password|
-        username == 'cookies' && password == 'cookies'
+        username == ENV['HTTP_USER'] && password == ENV['HTTP_PASSWORD']
       end
     end
 end

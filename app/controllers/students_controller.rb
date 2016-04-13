@@ -1,5 +1,6 @@
 class StudentsController < ApplicationController
   before_action :set_student, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate, only: [:index, :show, :edit, :update, :destroy]
 
   # GET /students
   # GET /students.json
@@ -70,5 +71,11 @@ class StudentsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def student_params
       params.require(:student).permit(:first_name, :last_name, :email, :phone_number, :message, :general_conditions, :civil_status, :availability, :activity_id, :city, :postal_code, :address, :activity_url)
+    end
+
+    def authenticate
+      authenticate_or_request_with_http_basic do |username, password|
+        username == ENV['HTTP_USER'] && password == ENV['HTTP_PASSWORD']
+      end
     end
 end

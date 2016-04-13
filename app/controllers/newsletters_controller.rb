@@ -1,5 +1,6 @@
 class NewslettersController < ApplicationController
   before_action :set_newsletter, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate, only: [:index, :show, :edit, :update, :destroy]
 
   # GET /newsletters
   # GET /newsletters.json
@@ -70,5 +71,11 @@ class NewslettersController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def newsletter_params
       params.require(:newsletter).permit(:email)
+    end
+
+    def authenticate
+      authenticate_or_request_with_http_basic do |username, password|
+        username == ENV['HTTP_USER'] && password == ENV['HTTP_PASSWORD']
+      end
     end
 end
