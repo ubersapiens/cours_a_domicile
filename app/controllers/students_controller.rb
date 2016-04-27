@@ -1,6 +1,6 @@
 class StudentsController < ApplicationController
   before_action :set_student, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate, only: [:index, :show, :edit, :update, :destroy]
+  before_filter :authenticate, only: [:index, :destroy]
 
   # GET /students
   # GET /students.json
